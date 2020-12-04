@@ -4,8 +4,8 @@
     <description>Send email with salesforce soap api</description>
     <license>ISC</license>
     <keywords>cordova,salesforce,soap,api,email</keywords>
-    <js-module src="www/SoapApiManager.js" name="SoapApiManager">
-        <clobbers target="SoapApiManager" />
+    <js-module src="www/SendEmailManager.js" name="SoapEmailManager">
+        <clobbers target="SoapEmailManager" />
     </js-module>
      <engines>
         <engine name="cordova" version=">=8.0.0" />
