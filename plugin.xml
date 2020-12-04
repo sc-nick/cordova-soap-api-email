@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-background-upload" version="2.0.2">
+    <name>Cordova Soap Api Email</name>
+    <description>Send email with salesforce soap api</description>
+    <license>ISC</license>
+    <keywords>cordova,salesforce,soap,api,email</keywords>
+    <js-module src="www/SoapApiManager.js" name="SoapApiManager">
+        <clobbers target="SoapApiManager" />
+    </js-module>
+     <engines>
+        <engine name="cordova" version=">=8.0.0" />
+        <engine name="cordova-android" version=">=8.0.0" />
+    </engines>
+   <dependency id="cordova-plugin-androidx" version="1.0.2"/>
+   <dependency id="cordova-plugin-androidx-adapter" version="1.1.0"/>
+   <dependency id="cordova-plugin-file" version="6.0.2"/>
+    <platform name="android">
+        <framework src="src/android/config.gradle" custom="true" type="gradleReference"/>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SendEmail">
+                <param name="android-package" value="com.spoon.soapapi.SendEmail" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <source-file src="src/android/SendEmail.java" target-dir="src/com/spoon/soapapi" />
+    </platform>
+</plugin>

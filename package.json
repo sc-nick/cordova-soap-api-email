@@ -1,0 +1,29 @@
+{
+  "name": "cordova-soap-api-email",
+  "version": "1.0.0",
+  "description": "Send email with soap api",
+  "cordova": {
+    "id": "cordova-soap-api-email",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spoonconsulting/cordova-soap-api-email"
+  },
+  "keywords": [
+    "cordova",
+    "salesforce",
+    "soap",
+    "api",
+    "email"
+  ],
+  "dependencies": {},
+  "author": "sc-nick",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordova": ">=8.0.0"
+  }
+}
