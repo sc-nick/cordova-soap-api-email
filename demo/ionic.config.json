@@ -1,8 +1,9 @@
 {
-  "name": "Upload Demo",
+  "name": "Send Email Demo",
   "integrations": {
     "capacitor": {},
     "cordova": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "app_id": ""
 }
