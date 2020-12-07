@@ -24,6 +24,10 @@
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="VERSION" android:value="1" />
+            <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.spoon.soapapi" />
+        </config-file>
         <source-file src="src/android/SendEmail.java" target-dir="src/com/spoon/soapapi" />
     </platform>
 </plugin>
