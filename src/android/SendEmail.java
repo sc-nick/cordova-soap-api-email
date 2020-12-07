@@ -1,4 +1,4 @@
-package com.spoon.backgroundfileupload;
+package com.spoon.soapapi;
 
 import android.content.ComponentName;
 import android.content.Context;
